@@ -1,5 +1,8 @@
 # Бэкенд-часть SPA веб-приложения "Трекер полезных привычек"
 
+### Docker
+
+- Собрать и запустить командой ```docker compose up --build```
 
 ### Установка:
 
@@ -14,7 +17,7 @@
 - Открыть командную строку и запустить ```python manage.py runserver```
 - Для запуска Celery открыть другой экземпляр командной строки и запустить ```celery -A config worker -l INFO -P eventlet```<br>
 - Для запуска django-celery-beat открыть другой экземляр командной строки и
-  запустить ```celery -A config beat -l INFO -S django```<br>
+  запустить ```celery -A config beat -l INFO -S Django```<br>
 - Создать бота в телеграм
 - В файле .env.sample заполнить данные для работы с проектом и переименовать его в .env
 - Кастомная команда для создания суперпользователя ```python manage.py csu```<br>
